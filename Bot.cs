@@ -5,7 +5,7 @@ namespace TelegramBot
 {
     public class Bot
     {
-        const string API_KEY = "810243861:AAEN9uEFpCJ5wIDItawTObF_w5yR5De76nQ";
+        const string API_KEY = "YOUR_API_KEY_HERE";
 
         private TelegramBotClient _client;
 
@@ -18,7 +18,7 @@ namespace TelegramBot
         {
             try
             {
-                //-347954659 ChatId del grupo Prueba dónde está el bot.
+                //-347954659 ChatId del grupo Prueba dï¿½nde estï¿½ el bot.
                 Telegram.Bot.Types.Message r = await _client.SendTextMessageAsync(-347954659, message);
                 Console.WriteLine(r);
             }
