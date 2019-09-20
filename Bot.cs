@@ -18,7 +18,8 @@ namespace TelegramBot
         {
             try
             {
-                Telegram.Bot.Types.Message r = await _client.SendTextMessageAsync("@TehPon", message);
+                //-347954659 ChatId del grupo Prueba dónde está el bot.
+                Telegram.Bot.Types.Message r = await _client.SendTextMessageAsync(-347954659, message);
                 Console.WriteLine(r);
             }
             catch(Exception e)
